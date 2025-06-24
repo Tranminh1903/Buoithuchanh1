@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web đồ điện tử</title>
+    <link rel="stylesheet" href="/bootstrap-5.3.6-dist/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background-color: #212121;
+            color: #fff;
+        }
+
+        .product-card {
+            background-color: #2c2c2c;
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .product-card:hover {
+            transform: scale(1.02);
+        }
+
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .storage-options .btn {
+            background-color: #1c1c1c;
+            color: white;
+            border: none;
+            margin: 5px 3px;
+            padding: 6px 12px;
+            border-radius: 8px;
+        }
+
+        .price {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #ffd700;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            color: #aaa;
+            margin-left: 5px;
+            font-weight: normal;
+        }
+
+        .discount {
+            color: #ccc;
+            margin-left: 5px;
+        }
+
+        .promo {
+            color: orange;
+            margin-top: 10px;
+            font-weight: 500;
+        }
+
+        .footer a {
+            color: #ccc;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: #0d6efd;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+   <body>
+ <nav class="navbar navbar-expand-lg" style="background-color: #1c1c1c;">
+        <div class="container-fluid">
+            <a class="navbar-brand" style="color: #fff;" href="#"><h1>Ryzen</h1></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" style="color: #fff;" href="Trangchu.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #fff;" href="#">Giỏ hàng</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" style="color: #fff;" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Sản phẩm
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="iphone.html">iPhone</a></li>
+                            <li><a class="dropdown-item" href="ipad.html">ipad</a></li>
+                            <li><a class="dropdown-item" href="mac.html">mac</a></li>
+                        </ul>   
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" style="color: #fff;" aria-disabled="true">Giới thiệu</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-danger" type="submit">Tìm kiếm</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+<!--body-->
+    <div class="container py-5">
+        <div class="row g-4">
+
+            <!-- Sản phẩm 1 -->
+            <div class=" col-md-4">
+                <div class="product-card">
+                    <img src="images/i16.png" class="product-image" alt="iPhone 16 Pro Max">
+                    <div class="storage-options">
+                        <button class="btn">256GB</button>
+                        <button class="btn">512GB</button>
+                        <button class="btn">1TB</button>
+                    </div>
+                    <h5>iPhone 16 Pro Max</h5>
+                    <div class="price">
+                        30.490.000đ
+                        <span class="old-price">34.990.000đ</span>
+                        <span class="discount">-12%</span>
+                    </div>
+                    <div class="promo">Online giá rẻ</div>
+                </div>
+            </div>
+
+            <!-- Sản phẩm 2 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="images/i16.png" class="product-image" alt="iPhone 16 Pro">
+                    <div class="storage-options">
+                        <button class="btn">128GB</button>
+                        <button class="btn">256GB</button>
+                        <button class="btn">512GB</button>
+                        <button class="btn">1TB</button>
+                    </div>
+                    <h5>iPhone 16 Pro</h5>
+                    <div class="price">
+                        24.990.000đ
+                        <span class="old-price">28.990.000đ</span>
+                        <span class="discount">-13%</span>
+                    </div>
+                    <div class="promo">Online giá rẻ</div>
+                </div>
+            </div>
+                       <!-- Sản phẩm 5 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="images/ip15.png" class="product-image" alt="iPhone 16 Pro">
+                    <div class="storage-options">
+                        <button class="btn">256GB</button>
+                        <button class="btn">512GB</button>
+                        <button class="btn">1TB</button>
+                    </div>
+                    <h5>iPhone 15 </h5>
+                    <div class="price">
+                        18.790.000đ
+                        <span class="old-price">22.999.000đ</span>
+                        <span class="discount">-18%</span>
+                    </div>
+                    <div class="promo">Liên hệ đặt hàng</div>
+                </div>
+            </div>
+
+            <!-- Sản phẩm 6 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="images/ip15.png" class="product-image" alt="iPhone 16 Pro">
+                    <div class="storage-options">
+                        <button class="btn">256GB</button>
+                        <button class="btn">512GB</button>
+                        <button class="btn">1TB</button>
+                    </div>
+                    <h5>iPhone 15 Plus </h5>
+                    <div class="price">
+                        22.490.000đ
+                        <span class="old-price">25.000.000đ</span>
+                        <span class="discount">-13%</span>
+                    </div>
+                    <div class="promo">Liên hệ đặt hàng</div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="images/ip14.png" class="product-image" alt="iPhone 16 Pro">
+                    <div class="storage-options">
+                        <button class="btn">256GB</button>
+                        <button class="btn">512GB</button>
+                        <button class="btn">1TB</button>
+                    </div>
+                    <h5>iPhone 14 Plus</h5>
+                    <div class="price">
+                        17.990.000đ
+                        <span class="old-price">19.999.000đ</span>
+                        <span class="discount">-10%</span>
+                    </div>
+                    <div class="promo">Liên hệ đặt hàng</div>
+                </div>
+            </div>
+
+            <!-- Sản phẩm 4 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="images/ip14.png" class="product-image" alt="iPhone 16 Pro">
+                    <div class="storage-options">
+                        <button class="btn">256GB</button>
+                        <button class="btn">512GB</button>
+                        <button class="btn">1TB</button>
+                    </div>
+                    <h5>iPhone 14 </h5>
+                    <div class="price">
+                        16.390.000đ
+                        <span class="old-price">20.999.000đ</span>
+                        <span class="discount">-21%</span>
+                    </div>
+                    <div class="promo">Liên hệ đặt hàng</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center " style="background-color: #ffffff; margin-left: 1000px; margin-right: 1000px; margin-bottom: 50px; border-radius: 10px;">
+        <a class="nav-link" style="color: #1c1c1c;" href="#"><b>Xem thêm</b></a>
+    </div>
+
+    <!--Footer-->
+    <div class="footer pt-5 pb-3" style="background-color: #1c1c1c;">
+        <div class="container">
+            <div class="row justify-content-center ">
+                <div class="col me-4  ">
+                    <h5>Ryzen</h5>
+                    <p><strong>Mua hàng:</strong> 0963096914 (8:00 - 21:30)</p>
+                    <p><strong>Khiếu nại:</strong> 0963096914 (8:00 - 21:30)</p>
+                </div>
+                <div class="col me-4 ">
+                    <h6>Hệ thống cửa hàng</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Nội quy cửa hàng</a></li>
+                        <li><a href="#">Chất lượng phục vụ</a></li>
+                        <li><a href="#">Chính sách bảo hành & đổi trả</a></li>
+                    </ul>
+                </div>
+                <div class="col me-4">
+                    <h6>Hỗ trợ khách hàng</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Điều kiện giao dịch chung</a></li>
+                        <li><a href="#">Hướng dẫn mua hàng online</a></li>
+                        <li><a href="#">Chính sách giao hàng</a></li>
+                    </ul>
+                </div>
+                <div class="col me-4">
+                    <h6>Trung tâm bảo hành</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Giới thiệu Ryzen</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/bootstrap-5.3.6-dist/js/bootstrap.bundle.js"></script>
+
+</body>
+
+</html>
