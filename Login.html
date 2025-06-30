@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web đồ điện tử</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .bg-image {
+      background-image: url('images/BGLogin.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .login-card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 40px 30px;
+      color: #fff;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .form-control {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      color: #fff;
+    }
+
+    .form-control::placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .form-label {
+      color: #fff;
+    }
+
+    a {
+      color: #f8f9fa;
+    }
+
+    .btn-white {
+      background-color: #fff;
+      color: #000;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bg-image">
+    <div class="login-card">
+      <h3 class="text-center mb-4"><b>Đăng Nhập</b></h3>
+      <form>
+        <div class="mb-3">
+          <label for="username" class="form-label">Tên tài khoản</label>
+          <input type="text" class="form-control" id="username" placeholder="Nhập tên tài khoản">
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Mật khẩu</label>
+          <input type="password" class="form-control" id="password" placeholder="Nhập mật khẩu">
+        </div>
+        <div class="d-flex justify-content-between mb-3">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="remember">
+            <label class="form-check-label" for="remember">Lưu mật khẩu</label>
+          </div>
+          <a href="#">Quên mật khẩu?</a>
+        </div>
+        <div class="d-grid mb-3">
+          <a href="index.html" class="btn btn-white text-center">Đăng nhập</a>
+        </div>
+        <div class="text-center">
+          Bạn chưa có tài khoản? <a href="Signup.html">Đăng kí</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+
+</html>
